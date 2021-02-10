@@ -1,0 +1,410 @@
+@import url(http://fonts.googleapis.com/css?family=Laila:400,700);
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index:0;
+}
+html { overflow-y: scroll; }
+body {
+    position: relative;
+    top: -20px;
+    left: 5px;
+    right: 5px;
+    bottom: -40px;
+    width: auto;
+    height: auto;
+    font-family: Arial, Tahoma, sans-serif;
+    background-size: auto;
+    background-color: #002147;
+    z-index: 0;
+    font-size: 62.5%;
+    line-height: 1;
+    padding-top: 40px;
+}
+
+br { display: block; line-height: 1.6em; } 
+
+input, textarea { 
+    -webkit-font-smoothing: antialiased;
+    outline: none; 
+}
+
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+
+h1 {
+    display: block;
+    font-size: 3.1em;
+    line-height: 1.45em;
+    font-family: 'Laila', serif;
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+    text-shadow: 1px 1px 0 #fff;
+}
+h2 {
+    display: block;
+    font-size: 2.1em;
+    line-height: 1.45em;
+    font-family: 'Laila', serif;
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+}
+
+h4{
+    display: block;
+    font-size: 2.1em;
+    line-height: 1.45em;
+    font-family: 'Laila', serif;
+    text-align: left;
+    font-weight: bold;
+    color: #aba7a7;
+}
+
+h6 {
+    display: block;
+    font-size: 2.1em;
+    line-height: 1.45em;
+    font-family: 'Laila', serif;
+    text-align: left-20px;
+    font-weight: bold;
+    color: #5ABEF3;
+}
+
+.error{
+    float: top;
+    font-size: 2.1em;
+    line-height: 1.45em;
+    font-family: 'Laila', serif;
+    text-align: left-20px;
+    font-weight: bold;
+    
+}
+
+
+
+.header{
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.header div{
+    float: left;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.header div span{
+    color: #5379fa !important;
+}
+
+.slide{
+    float: left;
+    width: 80%;
+}
+.mySlides{
+    display:none;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+@media (min-width:768px) {
+    .container {
+        width: 750px
+    }
+}
+@media (min-width:992px) {
+    .container {
+        width: 970px
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        width: 1170px
+    }
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.logo {
+    width: 100%;
+
+}
+
+/** form field **/
+form {
+    float: inside;
+    max-width: 99%;
+    margin: auto;
+    display: block;    
+    overflow: hidden;
+    /*background: #fff;*/
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    font-size: 0;
+    z-index:2;
+    padding-left: 3px;
+    padding-top: 8px;
+    padding-right: 3px;
+}
+
+form > div > label {
+    display: block;
+    padding: 20px 20px 10px;
+    vertical-align: bottom;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #939393;
+    cursor: pointer;
+}
+form > div.switch > label {
+    padding: 16px 20px 13px;
+}
+
+.col-2, .col-3, .col-4, .col-5 { 
+    border-bottom: 1px solid #e4e4e4;
+}
+
+form > div > .col-5 {
+    height: 86px;
+}
+
+label > input {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    margin: 5px -5px 0;
+    padding: 7px 5px 3px;
+    border: none;
+    outline: none;
+    color: #555;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    opacity: .6;
+    transition: all linear .3s;
+}
+
+.col-submit {
+    text-align: center;
+    padding: 20px;
+}
+
+label > select {
+    display: block;
+    width: 100%;
+    height: 26px;
+    padding-top: 0;
+    color: #f3f9f9;
+    margin: 16px 0 6px;
+    font-weight: 500;
+    background: #939393;
+    border: none;
+    outline: none;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 18px;
+    opacity: .4;
+    transition: all linear .3s;
+}
+
+label > input:focus, label > select:focus {
+    opacity: 1;
+}
+
+.btn {
+    background: #000000;
+    background-image: -webkit-linear-gradient(top, #000000, #cccccc);
+    background-image: -moz-linear-gradient(top, #000000, #cccccc);
+    background-image: -ms-linear-gradient(top, #000000, #cccccc);
+    background-image: -o-linear-gradient(top, #000000, #cccccc);
+    background-image: linear-gradient(to bottom, #000000, #cccccc);
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 7px 17px 7px 17px;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btn:hover {
+    background: #79c3f2;
+    background-image: -webkit-linear-gradient(top, #79c3f2, #3498db);
+    background-image: -moz-linear-gradient(top, #79c3f2, #3498db);
+    background-image: -ms-linear-gradient(top, #79c3f2, #3498db);
+    background-image: -o-linear-gradient(top, #79c3f2, #3498db);
+    background-image: linear-gradient(to bottom, #838a8e, #1e1850);
+    text-decoration: none;
+}
+
+/** button design based on http://codepen.io/guvootes/pen/eyDAb **/
+input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    /*text-shadow: 1px 1px 0 rgba(0,0,0,0.3);*/
+    overflow: hidden;
+    outline: none;
+}
+
+/** responsive design **/
+@media(min-width: 850px){
+    form > div { display: inline-block; }
+    .col-submit { display: block; }
+
+    .col-2, .col-3, .col-4, .col-5 { box-shadow: 1px 1px #e4e4e4; border: none; }
+
+    .col-2 { width: 25% }
+    .col-3 { width: 33.3333333333% }
+    .col-4 { width: 50% }
+    .col-5 { width: 25% }
+
+    .col-submit button { width: 30%; margin: 0 auto; }
+}
+
+
+.theme-table{
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.login{
+    float: right;
+    width: 20%;
+    padding: 9px;
+    z-index: 2;
+    background-color: #05072C ;
+}
+
+.login input[type=text]{
+    width: 310px;
+    height: 35px;
+    background : transparent;
+    border: 1px solid rgba(77, 140, 156, 0.6);
+    border-radius: 2px;
+    color: #ebe8f3;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+}
+
+.login input[type=password]{
+    width: 310px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid rgba(77, 140, 156, 0.6);
+    border-radius: 2px;
+    color: #ebe8f3;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+    /*    margin-top: 10px;*/
+}
+
+.login input[type=checkbox]{
+    position: relative;
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+/*.login input[type=submit]{
+    width: 260px;
+    height: 35px;
+    background: #5e9fe2;
+    border: 1px solid #7f75bf;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #e9e7ef;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px;
+    margin-top: 10px;*/
+/*}*/
+/*.reg input[type=submit]{
+    width: 260px;
+    height: 35px;
+    background: #556;
+    border: 1px solid #fef;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px;
+}*/
+.login input[type=submit]:hover{
+    opacity: 0.8;
+}
+
+.login input[type=submit]:active{
+    opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=submit]:focus{
+    outline: none;
+}
+
+
+::-webkit-input-placeholder{
+    color: rgba(240,240,255,0.3);
+}
+
+::-moz-input-placeholder{
+    color: rgba(240,240,255,0.3);
+}
